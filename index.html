@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+  <button onclick="omikujiButton()">おみくじを引く</button>
   <script>
     function Omikuji() {
       const fortune = Math.floor(Math.random() * 3);
@@ -19,6 +20,12 @@
       }
     }
     Omikuji();
+
+    function omikujiButton() {
+      const option = ['大吉', '中吉', '吉'];
+      const result = option[Math.floor(Math.random() * option.length)];
+      console.log(result);
+    }
   </script>
 </body>
 </html>
